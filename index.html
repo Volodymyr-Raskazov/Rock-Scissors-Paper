@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta target=”_blank”>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:100,200,300,regular,500,600,700,800,900&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Bruno+Ace+SC:regular&display=swap" rel="stylesheet" />
+	<!--&display=swap&subset=cyrillic-ext-->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Rock Scissors Paper</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="score__container">
+			<h2 class="score__title">Твій рахунок: <span id="playerScore">0</span></h2>
+			<h2 class="score__title">Рахунок комп'ютера: <span id="opponentScore">0</span></h2>
+		</div>
+		<div class="game__container">
+			<div class="game__buttons">
+				<button id="rock" class="game__btn button">Камінь</button>
+				<button id="scissors" class="game__btn button">Ножиці</button>
+				<button id="paper" class="game__btn button">Папір</button>
+			</div>
+			<div class="game__selections">
+				<div id="playerBlock" class="game__player">Ти обрав: <span></span></div>
+				<div id="timerBlock" class="game__timer">3</div>
+				<div id="resultBlock" class="game__result"></div>
+				<div id="opponentBlock" class="game__opponent">Компьютер обрав: <span></span></div>
+			</div>
+			<div id="modalWindow" class="game__modal modal">
+				<div class="modal__overlay"></div>
+				<div class="modal__content rules">
+					<button id="closeBtn" class="rules__close"><span class="rules__close-line">X</span></button>
+					<h2 class="rules__title">Правила гри</h2>
+					<ul class="rules__list">
+						<li>Камінь > Ножиці</li>
+						<li>Ножиці > Папір</li>
+						<li>Папір > Камінь</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="btn__container">
+			<!-- <button id="plusPoint" class="btn__plus button">Додати очко</button>
+			<button id="minusPoint" class="btn__minus button">Відняти очко</button> -->
+			<button id="resetBtn" class="btn__reset button">Скинути рахунок</button>
+			<button id="rulesBtn" class="btn__rules button">Правила гри</button>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
