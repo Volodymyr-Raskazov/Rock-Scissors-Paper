@@ -132,6 +132,7 @@ body {
   font-weight: 600;
   font-size: 1.25rem;
   letter-spacing: 2px;
+  -webkit-tap-highlight-color: transparent;
 }
 @media (max-width: 425px) {
   .button {
