@@ -43,6 +43,10 @@ body {
 	letter-spacing: 2px;
 	@media (max-width: 425px) {
 		font-size: 1rem;
+		&:hover {
+			color: #f5f5f5;
+			background-color: #262c37;
+		}
 	}
 	&:hover {
 		color: #262c37;
