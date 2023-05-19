@@ -1,7 +1,6 @@
 "use strict"
 if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
 } else {
-	console.log('this is not a touch device');
 	document.body.classList.add('no-touch');
 }
 
