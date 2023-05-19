@@ -47,6 +47,12 @@ body {
 	.no-touch &:hover {
 		color: #262c37;
 		background-color: #f5f5f5;
+		@media (max-width: 768px) {
+			&:hover {
+				color: #f5f5f5;
+				background-color: #262c37;
+			}
+		}
 	}
 }
 

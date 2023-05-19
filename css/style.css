@@ -143,6 +143,12 @@ body {
   color: #262c37;
   background-color: #f5f5f5;
 }
+@media (max-width: 768px) {
+  .no-touch .button:hover:hover {
+    color: #f5f5f5;
+    background-color: #262c37;
+  }
+}
 
 .score__container {
   display: -webkit-box;
