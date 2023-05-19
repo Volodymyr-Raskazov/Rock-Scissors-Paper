@@ -27,7 +27,7 @@ body {
 }
 
 [class*="__container"] {
-	max-width: 1300px;
+	// max-width: 1300px;
 	// margin: 0 auto;
 	padding: 0 15px;
 }
@@ -44,14 +44,10 @@ body {
 	@media (max-width: 425px) {
 		font-size: 1rem;
 	}
-	.no-touch &:hover {
-		color: #262c37;
-		background-color: #f5f5f5;
-	}
-	@media (max-width: 768px) {
+	@media (min-width: 1024px) {
 		&:hover {
-			color: #f5f5f5;
-			background-color: #262c37;
+			color: #262c37;
+			background-color: #f5f5f5;
 		}
 	}
 }
@@ -103,6 +99,10 @@ body {
 		// position: relative;
 		// min-width: 290px;
 		flex: 1 1 auto;
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		max-width: 625px;
 		align-self: center;
 		// margin: 0 auto;

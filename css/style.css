@@ -121,7 +121,6 @@ body {
 }
 
 [class*=__container] {
-  max-width: 1300px;
   padding: 0 15px;
 }
 
@@ -139,14 +138,10 @@ body {
     font-size: 1rem;
   }
 }
-.no-touch .button:hover {
-  color: #262c37;
-  background-color: #f5f5f5;
-}
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .button:hover {
-    color: #f5f5f5;
-    background-color: #262c37;
+    color: #262c37;
+    background-color: #f5f5f5;
   }
 }
 
@@ -206,6 +201,19 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 625px;
   -ms-flex-item-align: center;
       align-self: center;
