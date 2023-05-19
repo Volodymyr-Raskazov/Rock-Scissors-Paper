@@ -43,12 +43,8 @@ body {
 	letter-spacing: 2px;
 	@media (max-width: 425px) {
 		font-size: 1rem;
-		&:hover {
-			color: #f5f5f5;
-			background-color: #262c37;
-		}
 	}
-	&:hover {
+	.no-touch &:hover {
 		color: #262c37;
 		background-color: #f5f5f5;
 	}
