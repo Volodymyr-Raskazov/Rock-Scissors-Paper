@@ -147,19 +147,53 @@ body {
 }
 
 .score__container {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 150%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 15px;
   gap: 30px;
+  margin-bottom: 40px;
 }
 @media (max-width: 768px) {
   .score__container {
     gap: 20px;
+    font-size: 1.5rem;
   }
+}
+@media (max-width: 425px) {
+  .score__container {
+    font-size: 1rem;
+  }
+}
+.score__lang {
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+  padding: 10px;
+}
+.score__lang a {
+  color: #f5f5f5;
+  padding: 10px;
+}
+.score__lang a:hover {
+  color: #262c37;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+}
+.score__lang a.active {
+  color: #262c37;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
 }
 .score__title {
   font-size: 2rem;
@@ -168,17 +202,6 @@ body {
   border: 2px solid #f5f5f5;
   border-radius: 10px;
   padding: 10px;
-  margin-bottom: 40px;
-}
-@media (max-width: 768px) {
-  .score__title {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 425px) {
-  .score__title {
-    font-size: 1rem;
-  }
 }
 .score__title span {
   float: right;
@@ -243,6 +266,17 @@ body {
   -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
 }
+.game__title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 20px;
+}
+@media (max-width: 425px) {
+  .game__title {
+    font-size: 1.75rem;
+  }
+}
 .game__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,7 +284,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media (max-width: 375px) {
   .game__buttons {
@@ -373,6 +407,9 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
+}
+.rules__list > li > span {
+  font-weight: 700;
 }
 @media (max-width: 425px) {
   .rules__list > li {

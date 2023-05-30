@@ -15,35 +15,35 @@
 <body>
 	<div class="wrapper">
 		<div class="score__container">
-			<h2 class="score__title">Твій рахунок: <span id="playerScore">0</span></h2>
+			<h2 class="score__title">Your score: <span id="playerScore">0</span></h2>
 			<div class="score__lang">
-				<a id="ua" href="index.html" class="active">UA</a>
-				<a id="us" href="index_us.html">US</a>
+				<a id="ua" href="index.html">UA</a>
+				<a id="us" href="index_us.html" class="active">US</a>
 			</div>
-			<h2 class="score__title">Рахунок ШІ: <span id="opponentScore">0</span></h2>
+			<h2 class="score__title">AI score: <span id="opponentScore">0</span></h2>
 		</div>
 		<div class="game__container">
-			<h1 class="game__title">Зроби свій вибір:</h1>
+			<h1 class="game__title">Make your choice:</h1>
 			<div class="game__buttons">
-				<button id="rock" class="game__btn button">Камінь</button>
-				<button id="scissors" class="game__btn button">Ножиці</button>
-				<button id="paper" class="game__btn button">Папір</button>
+				<button id="rock" class="game__btn button">Rock</button>
+				<button id="scissors" class="game__btn button">Scissors</button>
+				<button id="paper" class="game__btn button">Paper</button>
 			</div>
 			<div class="game__selections">
-				<div id="playerBlock" class="game__player">Ти обрав: <span></span></div>
+				<div id="playerBlock" class="game__player">Your choice: <span></span></div>
 				<div id="timerBlock" class="game__timer">3</div>
 				<div id="resultBlock" class="game__result"></div>
-				<div id="opponentBlock" class="game__opponent">ШІ обрав: <span></span></div>
+				<div id="opponentBlock" class="game__opponent">AI choice: <span></span></div>
 			</div>
 			<div id="modalWindow" class="game__modal modal">
 				<div class="modal__overlay"></div>
 				<div class="modal__content rules">
 					<button id="closeBtn" class="rules__close"><span class="rules__close-line">X</span></button>
-					<h2 class="rules__title">Правила гри</h2>
+					<h2 class="rules__title">GAME RULES</h2>
 					<ul class="rules__list">
-						<li><b>Камінь</b> б'є <b>Ножиці</b></li>
-						<li><b>Ножиці</b> б'ють <b>Папір</b></li>
-						<li><b>Папір</b> б'є <b>Камінь</b></li>
+						<li><b>Rock</b> beats <b>Scissors</b></li>
+						<li><b>Scissors</b> beats <b>Paper</b></li>
+						<li><b>Paper</b> beats <b>Rock</b></li>
 					</ul>
 				</div>
 			</div>
@@ -51,11 +51,11 @@
 		<div class="btn__container">
 			<!-- <button id="plusPoint" class="btn__plus button">Додати очко</button>
 			<button id="minusPoint" class="btn__minus button">Відняти очко</button> -->
-			<button id="resetBtn" class="btn__reset button">Скинути рахунок</button>
-			<button id="rulesBtn" class="btn__rules button">Правила гри</button>
+			<button id="resetBtn" class="btn__reset button">Reset score</button>
+			<button id="rulesBtn" class="btn__rules button">GAME RULES</button>
 		</div>
 	</div>
-	<script src="js/script.js"></script>
+	<script src="js/script_us.js"></script>
 </body>
 
 </html>

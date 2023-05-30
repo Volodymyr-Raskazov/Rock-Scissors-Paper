@@ -56,14 +56,44 @@ body {
 // ============================================================================
 .score {
 	&__container {
+		font-size: 2rem;
+		font-weight: 600;
+		line-height: 150%;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		padding-top: 15px;
 		gap: 30px;
+		margin-bottom: 40px;
 		@media (max-width: 768px) {
 			gap: 20px;
+			font-size: 1.5rem;
+		}
+		@media (max-width: 425px) {
+			font-size: 1rem;
 		}
 		// margin: 0 auto;
+	}
+	&__lang {
+		border: 2px solid #f5f5f5;
+		border-radius: 10px;
+		padding: 10px;
+		a {
+			color: #f5f5f5;
+			padding: 10px;
+		}
+		a:hover {
+			color: #262c37;
+			background-color: #f5f5f5;
+			border-radius: 5px;
+			padding: 10px;
+		}
+		a.active {
+			color: #262c37;
+			background-color: #f5f5f5;
+			border-radius: 5px;
+			padding: 10px;
+		}
 	}
 	&__title {
 		font-size: 2rem;
@@ -72,13 +102,7 @@ body {
 		border: 2px solid #f5f5f5;
 		border-radius: 10px;
 		padding: 10px;
-		margin-bottom: 40px;
-		@media (max-width: 768px) {
-			font-size: 1.5rem;
-		}
-		@media (max-width: 425px) {
-			font-size: 1rem;
-		}
+
 		span {
 			float: right;
 			font-family: $numbersFont;
@@ -126,11 +150,20 @@ body {
 			transition: all ease-out 0.3s;
 		}
 	}
+	&__title {
+		font-size: 2.25rem;
+		font-weight: 600;
+		line-height: 125%;
+		margin-bottom: 20px;
+		@media (max-width: 425px) {
+			font-size: 1.75rem;
+		}
+	}
 	&__buttons {
 		display: flex;
 		justify-content: space-around;
 		gap: 10px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 		@media (max-width: 375px) {
 			flex-wrap: wrap;
 			gap: 10px;
@@ -244,6 +277,9 @@ body {
 
 	&__list {
 		> li {
+			> span {
+				font-weight: 700;
+			}
 			font-size: 1.5rem;
 			@media (max-width: 425px) {
 				font-size: 1rem;
