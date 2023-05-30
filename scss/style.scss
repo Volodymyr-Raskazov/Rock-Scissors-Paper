@@ -56,9 +56,11 @@ body {
 // ============================================================================
 .score {
 	&__container {
-		font-size: 2rem;
-		font-weight: 600;
-		line-height: 150%;
+		> * {
+			font-size: 2rem;
+			font-weight: 600;
+			line-height: 150%;
+		}
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -66,39 +68,43 @@ body {
 		gap: 30px;
 		margin-bottom: 40px;
 		@media (max-width: 768px) {
-			gap: 20px;
-			font-size: 1.5rem;
+			gap: 15px;
+			> * {
+				font-size: 1.5rem;
+			}
 		}
 		@media (max-width: 425px) {
-			font-size: 1rem;
+			align-items: flex-start;
+			> * {
+				font-size: 0.75rem;
+			}
 		}
 		// margin: 0 auto;
 	}
 	&__lang {
+		text-align: center;
 		border: 2px solid #f5f5f5;
 		border-radius: 10px;
 		padding: 10px;
 		a {
+			display: inline-block;
 			color: #f5f5f5;
-			padding: 10px;
+			padding: 0 5px;
 		}
 		a:hover {
 			color: #262c37;
 			background-color: #f5f5f5;
 			border-radius: 5px;
-			padding: 10px;
+			padding: 0 5px;
 		}
 		a.active {
 			color: #262c37;
 			background-color: #f5f5f5;
 			border-radius: 5px;
-			padding: 10px;
+			padding: 0 5px;
 		}
 	}
 	&__title {
-		font-size: 2rem;
-		font-weight: 600;
-		line-height: 150%;
 		border: 2px solid #f5f5f5;
 		border-radius: 10px;
 		padding: 10px;
@@ -128,17 +134,17 @@ body {
 		display: flex;
 		// justify-content: center;
 		align-items: center;
-		max-width: 625px;
+		width: 625px;
 		align-self: center;
 		margin: 0 auto;
 		@media (max-width: 425px) {
-			max-width: 395px;
+			width: 395px;
 		}
 		@media (max-width: 375px) {
-			max-width: 345px;
+			width: 345px;
 		}
 		@media (max-width: 320px) {
-			max-width: 290px;
+			width: 290px;
 		}
 	}
 	&__modal {
